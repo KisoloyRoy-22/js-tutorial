@@ -20,41 +20,41 @@
 //     console.log("I am clicked!!")
 // }
 
-// let i=0;
-// let sum=0;
-// let a=[];
-// function getRandom(){
-//     i++
-//     let n=Math.round(Math.random()*13);
-//     a[i-1]=n;
-//     console.log(n);
-//     sum+=n;
-//     if(sum==21){
-//         document.getElementById("output").textContent=`You have own the game with `+ i + ` Cards drawn & your sum is ` + sum;
-//         document.getElementById("cards").textContent=`Cards : `+a
-//         i=0;
-//         sum=0;
-//         a=[];
-//     }
-//     else if(sum<21 && sum>0){
-//         document.getElementById("output").textContent=`Continue!! `+i + ` Cards drawn & your sum is ` + sum;
-//         document.getElementById("cards").textContent=`Cards : `+a
-//     }
-//     else if(sum>21){
-//         document.getElementById("output").textContent=`You have lost the Game! Retry!!! `+i + ` Cards drawn & your sum is ` + sum;
-//         document.getElementById("cards").textContent=`Cards : `+a
-//         i=0;
-//         sum=0;
-//         a=[];
-//     }
-// }
-// function clr(){
-//     i=0;
-//     sum=0;
-//     a=[];
-//     document.getElementById("output").textContent=`Cards Drawn = 0`
-//     document.getElementById("cards").textContent=`Cards : `
-// }
+let i=0;
+let sum=0;
+let a=[];
+function getRandom(){
+    i++
+    let n=Math.round(Math.random()*13);
+    a[i-1]=n;
+    console.log(n);
+    sum+=n;
+    if(sum==21){
+        document.getElementById("output").textContent=`You have own the game with `+ i + ` Cards drawn & your sum is ` + sum;
+        document.getElementById("cards").textContent=`Cards : `+a
+        i=0;
+        sum=0;
+        a=[];
+    }
+    else if(sum<21 && sum>0){
+        document.getElementById("output").textContent=`Continue!! `+i + ` Cards drawn & your sum is ` + sum;
+        document.getElementById("cards").textContent=`Cards : `+a
+    }
+    else if(sum>21){
+        document.getElementById("output").textContent=`You have lost the Game! Retry!!! `+i + ` Cards drawn & your sum is ` + sum;
+        document.getElementById("cards").textContent=`Cards : `+a
+        i=0;
+        sum=0;
+        a=[];
+    }
+}
+function clr(){
+    i=0;
+    sum=0;
+    a=[];
+    document.getElementById("output").textContent=`Cards Drawn = 0`
+    document.getElementById("cards").textContent=`Cards : `
+}
 
 
 // setTimeout(()=>{
